@@ -1,0 +1,61 @@
+:root {
+  --body-bg: hsl(212, 45%, 89%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text1-clr: hsl(218, 44%, 22%);
+  --text2-clr: hsl(216, 15%, 48%);
+  --border-radius: 1rem;
+  --font-size: 15px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+  font-size: var(--font-size);
+}
+
+.card {
+  background-color: var(--card-bg);
+  max-width: 90vw;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: var(--border-radius);
+}
+
+.qr-title {
+  text-align: center;
+  color: var(--text1-clr);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.qr-text {
+  text-align: center;
+  color: var(--text2-clr);
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    max-width: 17rem;
+  }
+}
