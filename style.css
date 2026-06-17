@@ -31,14 +31,14 @@ body {
 }
 
 .card {
-  max-width: 21.35rem;
+  max-width: 21.3rem;
   background-color: var(--card-bg);
   padding: 1rem;
   border-radius: var(--border-radius1);
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   box-shadow: var(--box-shadow);
 }
 
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 1rem 1.7rem;
+  padding: 0rem 1rem 2.2rem;
 }
 
 .qr-title {
